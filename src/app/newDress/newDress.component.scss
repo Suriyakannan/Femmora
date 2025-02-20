@@ -1,0 +1,61 @@
+.new-dress-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #F1F1F1;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+  
+    .view-more {
+      color: purple;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+  
+  .dress-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  .dress-item {
+    min-width: 300px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    text-align: center;
+  
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    h3 {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  
+    p {
+      color: gray;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 10px;
+        
+        .dress-item {
+          min-width: 180px;
+        }
+      }
+  }
+  

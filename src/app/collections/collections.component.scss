@@ -1,0 +1,66 @@
+.collections-container {
+    background-color: #a9a1a1; 
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 50px;
+  
+    .text-content {
+      text-align: right;
+      color: #fff;
+  
+      h4 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+  
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+  
+      p {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+  
+      .shop-button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 4px;
+  
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px;
+        text-align: center;
+      }
+    
+      .text-content {
+        max-width: 400px;
+    
+        h2 {
+          font-size: 24px;
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+    
+        p {
+          font-size: 16px;
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+  }
+  

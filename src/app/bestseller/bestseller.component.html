@@ -1,1 +1,27 @@
-<p>bestseller works!</p>
+<div class="bestseller-container">
+    <h2>Our Best Sellers</h2>
+    <a href="#" class="view-more">view more</a>
+  
+    <div class="bestseller-scroll">
+      @for (item of bestSellers; track item) {
+        <div class="bestseller-item">
+          <div class="discount">{{ item.discount }}</div>
+          <img [src]="item.image" alt="Best Seller Image">
+          <h3>{{ item.title }}</h3>
+          <p class="old-price">{{ item.oldPrice }}</p>
+          <p class="new-price">{{ item.newPrice }}</p>
+          <p class="rating">⭐ {{ item.rating }}</p>
+          <div class="colors">
+            @for (color of item.colors; track color) {
+              <span [style.background]="color"></span>
+            }
+          </div>
+          <div class="buttons">
+            <button class="view">View more</button>
+            <button class="shop">Shop this</button>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+  

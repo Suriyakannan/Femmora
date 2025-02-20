@@ -1,0 +1,56 @@
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    background-color: #fdfbf5;
+  
+    .left-items,
+    .right-items {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+  
+    .offer-details {
+      text-align: center;
+  
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+  
+      p {
+        font-size: 14px;
+        color: #666;
+        margin: 10px 0;
+      }
+  
+      button {
+        background: linear-gradient(to right, #f36dff, #a370f0);
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    
+        .offer-images {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+  }
+  

@@ -1,1 +1,10 @@
-<p>stock works!</p>
+<div class="stock-container">
+    @for (item of stockItems; track item) {
+      <div class="stock-item">
+        <img [src]="item.image" [alt]="item.name">
+        <h3>{{ item.name }}</h3>
+        <button class="view-button">View More</button>
+      </div>
+    }
+  </div>
+  

@@ -1,0 +1,15 @@
+<div class="new-dress-container">
+    <h2>New In Dresses</h2>
+    <a href="#" class="view-more">view more</a>
+  
+    <div class="dress-scroll">
+      @for (dress of dresses; track dress) {
+        <div class="dress-item">
+          <img [src]="dress.image" [alt]="dress.name">
+          <h3>{{ dress.name }}</h3>
+          <p>{{ dress.price }}</p>
+        </div>
+      }
+    </div>
+  </div>
+  

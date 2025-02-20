@@ -1,0 +1,58 @@
+.Maincontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5ebe7;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+  
+    .rightcontent {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .middlecontent {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+  
+      .mid {
+        display: flex;
+        gap: 20px;
+  
+        div {
+          font-size: 16px;
+          cursor: pointer;
+          font-weight: 500;
+  
+          &:hover {
+            color: #a07c68;
+          }
+        }
+      }
+    }
+  
+    .leftcontent {
+      .mid {
+        display: flex;
+        gap: 15px;
+  
+        div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+  
+          img {
+            width: 20px;
+            height: 20px;
+          }
+  
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  
