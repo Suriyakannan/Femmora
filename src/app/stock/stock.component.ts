@@ -9,13 +9,13 @@ import { Component } from '@angular/core';
 })
 export class StockComponent {
   stockItems = [
-    { name: 'Formal wear', image: '/troubleshoot.png' },
-    { name: 'Crop top', image: '/troubleshoot.png' },
-    { name: 'Bodycon', image: '/troubleshoot.png' },
-    { name: 'Dress', image: '/troubleshoot.png' },
-    { name: 'Blazers', image: '/troubleshoot.png' },
-    { name: 'Winter wear', image: '/troubleshoot.png' },
-    { name: 'Jumpsuit', image: '/troubleshoot.png' },
-    { name: 'Formal wear', image: '/troubleshoot.png' }
+    { name: 'Formal wear', image: '/Group 6.png' },
+    { name: 'Crop top', image: '/Group 5.png' },
+    { name: 'Bodycon', image: '/Rectangle.png' },
+    { name: 'Dress', image: '/Group 5 (1).png' },
+    { name: 'Blazers', image: '/Rectangle (1).png' },
+    { name: 'Winter wear', image: '/Rectangle (2).png' },
+    { name: 'Jumpsuit', image: '/Group 5 (2).png' },
+    { name: 'Formal wear', image: '/Group 6 (1).png' }
   ];
 }

@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 export class BestsellerComponent {
   bestSellers = [
     {
-      image: '/troubleshoot.png',
-      discount: '45% OFF',
+      image: '/Frame 1984077517.png',
+      // discount: '45% OFF',
       title: 'Colored crop top',
       oldPrice: '$512.58',
       newPrice: '$230.00',
@@ -19,8 +19,8 @@ export class BestsellerComponent {
       colors: ['#FF6384', '#36A2EB', '#FFCE56']
     },
     {
-      image: '/troubleshoot.png',
-      discount: '45% OFF',
+      image: '/Frame 1984077517 (1).png',
+      // discount: '45% OFF',
       title: 'Colored crop top',
       oldPrice: '$512.58',
       newPrice: '$230.00',
@@ -28,8 +28,8 @@ export class BestsellerComponent {
       colors: ['#FF6384', '#36A2EB', '#FFCE56']
     },
     {
-      image: '/troubleshoot.png',
-      discount: '45% OFF',
+      image: '/Frame 1984077517 (2).png',
+      // discount: '45% OFF',
       title: 'Colored crop top',
       oldPrice: '$512.58',
       newPrice: '$230.00',
@@ -37,13 +37,23 @@ export class BestsellerComponent {
       colors: ['#FF6384', '#36A2EB', '#FFCE56']
     },
     {
-      image: '/troubleshoot.png',
-      discount: '45% OFF',
+      image: '/Frame 1984077517.png',
+      // discount: '45% OFF',
+      title: 'Colored crop top',
+      oldPrice: '$512.58',
+      newPrice: '$230.00',
+      rating: '4.5 (18)',
+      colors: ['#FF6384', '#36A2EB', '#FFCE56']
+    },
+    {
+      image: '/Frame 1984077517 (1).png',
+      // discount: '45% OFF',
       title: 'Colored crop top',
       oldPrice: '$512.58',
       newPrice: '$230.00',
       rating: '4.5 (18)',
       colors: ['#FF6384', '#36A2EB', '#FFCE56']
     }
+   
   ];
 }

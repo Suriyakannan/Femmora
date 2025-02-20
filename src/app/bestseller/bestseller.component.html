@@ -5,7 +5,7 @@
     <div class="bestseller-scroll">
       @for (item of bestSellers; track item) {
         <div class="bestseller-item">
-          <div class="discount">{{ item.discount }}</div>
+          <!-- <div class="discount">{{ item.discount }}</div> -->
           <img [src]="item.image" alt="Best Seller Image">
           <h3>{{ item.title }}</h3>
           <p class="old-price">{{ item.oldPrice }}</p>
