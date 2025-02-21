@@ -2,17 +2,18 @@
     text-align: center;
     background: #fbeff3;
     padding: 40px 20px;
-  
+    
     h2 {
-      font-size: 24px;
-      font-weight: bold;
+      font-size: 36px;
+      font-weight: 500;
     }
   
     .view-more {
-      color: #a370f0;
+      color: #C473FF;
       text-decoration: none;
-      font-size: 14px;
-      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      // margin-bottom: 20px;
       display: inline-block;
     }
   
@@ -23,6 +24,13 @@
       padding: 20px;
       scroll-behavior: smooth;
       white-space: nowrap;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none; 
+      -ms-overflow-style: none;
+    
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   
     .bestseller-item {
@@ -33,36 +41,53 @@
       text-align: left;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       position: relative;
-  
-    //   .discount {
-    //     position: absolute;
-    //     top: 10px;
-    //     left: 10px;
-    //     background: red;
-    //     color: white;
-    //     font-size: 12px;
-    //     padding: 5px 10px;
-    //     border-radius: 5px;
-    //   }
-  
-      img {
-        width: 100%;
-        border-radius: 10px;
+     
+      .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
+
+      .price{
+        display: flex;
+        gap: 4px;
+        justify-content: start;
+        align-items: center;
+      }
+      img {
+        // width: 100%;
+      width: 250px;
+        // height: 200px; /* Adjust height as needed */
+        object-fit: cover; /* Ensures the image fills the area without distortion */
+        // border-radius: 10px;
+
+     
+      }
+    
+      // .rating {
+      //   width: 100%;
+      //   height: 20px;
+      // }
+    
   
       h3 {
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #846464;
         margin: 10px 0;
       }
   
       .old-price {
         text-decoration: line-through;
-        color: #888;
+        font-size: 14px;
+        font-weight: 400;
+        color: #404040;
       }
   
       .new-price {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 700;
+        color:#404040;
       }
   
       .rating {
@@ -76,8 +101,8 @@
         margin: 10px 0;
   
         span {
-          width: 15px;
-          height: 15px;
+          width: 28px;
+          height: 28px;
           border-radius: 4px;
           display: inline-block;
         }
@@ -91,19 +116,26 @@
         button {
           flex: 1;
           padding: 8px;
-          border: none;
-          border-radius: 20px;
+          border:#C473FF;
+          box-shadow: #C473FF;
+          border-radius: 4px;
           cursor: pointer;
           font-size: 14px;
         }
   
         .view {
-          background: #ddd;
+          background: transparent;
+          border:2px solid #C473FF;
+          color: #C473FF;
+          font-weight: 700;
+          font-size: 16px;
         }
   
         .shop {
-          background: linear-gradient(to right, #f36dff, #a370f0);
-          color: white;
+          background:#C473FF;
+          color: #F8EDEB;
+          font-weight: 700;
+          font-size: 16px;
         }
       }
     }

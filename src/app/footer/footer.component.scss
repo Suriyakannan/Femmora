@@ -1,30 +1,48 @@
 .footer {
     background: #000;
-    color: #fff;
-    padding: 20px;
+    color: #F8EDEB;
     text-align: left;
   
     .footer-content {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding: 20px;
   
      .footerTest{
+      padding: 119px 0 0 70px;
         flex: 1;
+        font-style: Volkhov;
         min-width: 150px;
-        margin-bottom: 20px;
+        font-size: 32px;
+        font-weight: 400;
      }
 
       .footer-section {
         flex: 1;
+        padding: 46px 0 0 0;
         min-width: 150px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
+        // justify-content: space-between;
   
         h3 {
-          font-size: 1.2em;
+          font-size: 24px;
+          font-weight: 700;
           margin-bottom: 10px;
         }
+        p{
+          font-size: 20px;
+          font-weight: 500;
+        }
+        span{
+          .off{
+            font-size: 16px;
+            font-weight: 400;
+          margin-bottom: 10px;
+
+          }
+        }
+        
+        
   
         ul {
           list-style: none;
@@ -34,7 +52,7 @@
             margin-bottom: 5px;
   
             a {
-              color: #fff;
+              color: #F8EDEB;
               text-decoration: none;
               &:hover {
                 text-decoration: underline;
@@ -45,18 +63,35 @@
   
         .subscribe-box {
           display: flex;
-          margin-top: 10px;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          width: fit-content;
+          padding-top: 16px;
   
           input {
-            padding: 8px;
+            padding: 10px 40px 10px 10px; 
             border: none;
             outline: none;
             width: 70%;
+            background: black;
+            border: 2px solid white;
+            font-size: 16px;
+            font-weight: 400;
+          border-radius: 4px;
+
           }
   
+          img {
+            position: absolute;
+            right: 10px;  // Adjust icon position
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
           button {
-            background: #a855f7;
-            color: #fff;
+            background:transparent;
+            color: #F8EDEB;
             border: none;
             padding: 8px 12px;
             cursor: pointer;
@@ -69,27 +104,134 @@
           font-size: 1.5em;
   
           a {
-            color: #fff;
+            color: #F8EDEB;
+            text-decoration: none;
+          }
+        }
+      }
+       .footer-support{
+        padding: 48px 0 0 72px;
+        h3{
+          font-size: 20px;
+          font-weight: 500;
+        }
+        p{
+          font-size: 16px;
+          font-weight: 400;
+        }
+       }
+      .footer-about {
+        padding: 48px 0 0 72px;
+       
+        h3 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p{
+          font-size: 16px;
+          font-weight: 400;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            margin-bottom: 5px;
+  
+            a {
+              color: #F8EDEB;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+  
+        &.social {
+          display: flex;
+          gap: 10px;
+          font-size: 1.5em;
+  
+          a {
+            color: #F8EDEB;
             text-decoration: none;
           }
         }
       }
     }
-  
+   .footer-get{
+      padding: 51px 0 0 110px;
+     
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            color: #F8EDEB;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+
+      &.social {
+        display: flex;
+        gap: 10px;
+        font-size: 1.5em;
+
+        a {
+          color: #F8EDEB;
+          text-decoration: none;
+        }
+      }
+    
+   }
+   .footer-social{
+    padding: 62px 74px 0 85px;
+   
+  gap: 15px;
+   .social{
+    display: flex;
+    align-items: center;
+   }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .icon{
+          display: flex;
+          justify-content: space-between;
+          gap: 12px;
+    }
+ }
     .footer-bottom {
       text-align: center;
       padding: 10px;
-      font-size: 0.9em;
-  
+      font-size: 16px;
+      font-weight: 600;
       ul {
         list-style: none;
         padding: 0;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         gap: 15px;
   
         li a {
-          color: #fff;
+          color: #F8EDEB;
           text-decoration: none;
         }
       }

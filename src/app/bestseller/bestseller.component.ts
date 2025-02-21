@@ -16,16 +16,16 @@ export class BestsellerComponent {
       oldPrice: '$512.58',
       newPrice: '$230.00',
       rating: '4.5 (18)',
-      colors: ['#FF6384', '#36A2EB', '#FFCE56']
+      colors: ['#FC7474', '#892CEB', '#6FE5FF']
     },
     {
       image: '/Frame 1984077517 (1).png',
       // discount: '45% OFF',
       title: 'Colored crop top',
+      rating: '4.5 (18)',
       oldPrice: '$512.58',
       newPrice: '$230.00',
-      rating: '4.5 (18)',
-      colors: ['#FF6384', '#36A2EB', '#FFCE56']
+      colors: ['#FC7474', '#892CEB', '#6FE5FF']
     },
     {
       image: '/Frame 1984077517 (2).png',
@@ -34,7 +34,7 @@ export class BestsellerComponent {
       oldPrice: '$512.58',
       newPrice: '$230.00',
       rating: '4.5 (18)',
-      colors: ['#FF6384', '#36A2EB', '#FFCE56']
+      colors: ['#FC7474', '#892CEB', '#6FE5FF']
     },
     {
       image: '/Frame 1984077517.png',
@@ -43,7 +43,7 @@ export class BestsellerComponent {
       oldPrice: '$512.58',
       newPrice: '$230.00',
       rating: '4.5 (18)',
-      colors: ['#FF6384', '#36A2EB', '#FFCE56']
+      colors: ['#FC7474', '#892CEB', '#6FE5FF']
     },
     {
       image: '/Frame 1984077517 (1).png',
@@ -52,7 +52,7 @@ export class BestsellerComponent {
       oldPrice: '$512.58',
       newPrice: '$230.00',
       rating: '4.5 (18)',
-      colors: ['#FF6384', '#36A2EB', '#FFCE56']
+      colors: ['#FC7474', '#892CEB', '#6FE5FF']
     }
    
   ];

@@ -4,14 +4,17 @@
     background-color: #F1F1F1;
   
     h2 {
-      font-size: 24px;
+      font-size: 36px;
+      font-weight: 500;
+      color: #000000;
       margin-bottom: 5px;
     }
   
     .view-more {
-      color: purple;
+      color: #C473FF;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 20px;
+      font-weight: 600;
     }
   }
   
@@ -37,17 +40,19 @@
   
     img {
       width: 100%;
-      border-radius: 10px;
+      // border-radius: 10px;
     }
   
     h3 {
-      font-size: 18px;
-      margin: 5px 0;
+      font-size: 24px;
+      font-weight: 600;
+      // margin: 5px 0;
     }
   
     p {
-      color: gray;
+      color: #000000;
       font-size: 16px;
+      font-weight: 400;
     }
 
     @media (max-width: 768px) {

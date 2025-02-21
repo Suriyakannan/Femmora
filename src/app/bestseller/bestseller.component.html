@@ -7,10 +7,14 @@
         <div class="bestseller-item">
           <!-- <div class="discount">{{ item.discount }}</div> -->
           <img [src]="item.image" alt="Best Seller Image">
-          <h3>{{ item.title }}</h3>
-          <p class="old-price">{{ item.oldPrice }}</p>
-          <p class="new-price">{{ item.newPrice }}</p>
-          <p class="rating">⭐ {{ item.rating }}</p>
+          <div class="title">
+            <h3>{{ item.title }}</h3>
+            <p class="rating">⭐ {{ item.rating }}</p>
+          </div>
+          <div class="price">
+            <p class="old-price">{{ item.oldPrice }}</p>
+            <p class="new-price">{{ item.newPrice }}</p>
+          </div>
           <div class="colors">
             @for (color of item.colors; track color) {
               <span [style.background]="color"></span>

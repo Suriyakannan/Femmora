@@ -1,9 +1,11 @@
 .offer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
-    gap: 40px;
+    // padding: 20px;
+    // gap: 40px;
+    // width: 1440px;
+    height: 536px;
     background-color: #fdfbf5;
   
     .left-items,
@@ -13,8 +15,11 @@
       gap: 15px;
   
       img {
-        width: 100px;
-        height: auto;
+        .leftimg{
+          padding-left: 113px;
+        }
+        // width: 100px;
+        // height: auto;
       }
     }
   
@@ -22,23 +27,27 @@
       text-align: center;
   
       h2 {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 16px;
+        font-weight: 600;
+        
       }
   
       p {
-        font-size: 14px;
-        color: #666;
+        font-size: 12px;
+        font-weight: 400;
+        color: #000000;
         margin: 10px 0;
       }
   
       button {
-        background: linear-gradient(to right, #f36dff, #a370f0);
+        // background: linear-gradient(to right, #f36dff, #a370f0);
+        background: #C473FF;
         border: none;
         padding: 10px 20px;
-        color: white;
-        font-weight: bold;
-        border-radius: 20px;
+        color: #F8EDEB;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 4px;
         cursor: pointer;
       }
     }
