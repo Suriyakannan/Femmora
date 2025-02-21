@@ -6,13 +6,13 @@
     width: 100%;
     height: 100vh;
   
-    @media (max-width: 768px) {
+    @media (min-width: 600px) and (max-width: 700px) {
     background-image: url('/Frame 1984078242.png');
-      background-size: contain;  // Adjusts for smaller screens
-      width: fixed(375px);
-      height: Hug(194px);
-      gap: 12px;
-      top: 96px;
+    width: 740px;
+    height: 356px;
+    background-size: cover
+      // gap: 12px;
+      // top: 96px;
       // height: auto;
       // padding: 50px 20px;  // Adds spacing for mobile view
     }
