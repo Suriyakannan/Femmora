@@ -2,7 +2,12 @@
     text-align: center;
     padding: 20px;
     background-color: #F1F1F1;
-  
+    .newDress{
+      display: block;
+    }
+     .Trending{
+      display:none;
+     }
     h2 {
       font-size: 36px;
       font-weight: 500;
@@ -16,51 +21,96 @@
       font-size: 20px;
       font-weight: 600;
     }
-  }
-  
-  .dress-scroll {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 20px 0;
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
-  
-    &::-webkit-scrollbar {
-      display: none;
+    .dress-scroll {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px 0;
+      scrollbar-width: none; 
+      -ms-overflow-style: none;
+    
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    
+    .dress-item {
+      min-width: 300px;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      text-align: center;
+    
+      img {
+        width: 100%;
+        // border-radius: 10px;
+      }
+    
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        // margin: 5px 0;
+      }
+    
+      p {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
   
-  .dress-item {
-    min-width: 300px;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    text-align: center;
-  
-    img {
-      width: 100%;
-      // border-radius: 10px;
-    }
-  
-    h3 {
-      font-size: 24px;
-      font-weight: 600;
-      // margin: 5px 0;
-    }
-  
-    p {
-      color: #000000;
-      font-size: 16px;
-      font-weight: 400;
-    }
 
-    @media (max-width: 768px) {
-        padding: 10px;
-        
-        .dress-item {
-          min-width: 180px;
+
+  @media (min-width: 320px) and (max-width: 425px){
+    .new-dress-container {
+      text-align: center;
+      padding: 20px;
+      width: 342px;
+      background-color: #F1F1F1;
+      grid-template-columns: repeat(2, 1fr);
+      .newDress{
+        display: none;
+      }
+       .Trending{
+        display: block;
+       }
+      h2 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 5px;
+      }
+    
+      .view-more {
+        color: #C473FF;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .dress-item {
+        min-width: 0;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        text-align: center;
+      
+        img {
+          width: 113px;
+          // border-radius: 10px;
+        }
+      
+        h3 {
+          font-size: 12px;
+          font-weight: 400;
+          // margin: 5px 0;
+        }
+      
+        p {
+          color: #000000;
+          font-size: 10px;
+          font-weight: 400;
         }
       }
+    } 
   }
   

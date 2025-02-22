@@ -1,3 +1,13 @@
+.category{
+  display: none;
+    font-size: 16px;
+    font-weight:500 ;
+    .view{
+      display: none;
+        font-size: 12px;
+        font-weight:600 ;
+    }
+  }
 .stock-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -43,14 +53,6 @@
         }
       }
     }
-    @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    
-      @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    
       .stock-item {
         text-align: center;
         
@@ -65,5 +67,80 @@
           margin-top: 10px;
         }
       }
+  }
+  @media (min-width: 320px) and (max-width: 425px) {
+    // .category{
+    //   display: block;
+    //     font-size: 16px;
+    //     font-weight:500 ;
+    //     .view{
+    //       display: block;
+    //         font-size: 12px;
+    //         font-weight:600 ;
+    //     }
+    //   }
+    .stock-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 342px;
+      gap: 20px;
+      padding: 20px;
+      background-color: #F8EDEB;
+    
+   
+  
+      .stock-item {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        text-align: center;
+        padding: 15px;
+        // border-radius: 8px;
+        // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          // border-radius: 5px;
+        }
+    
+        h3 {
+          margin: 10px 0;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: Urbanist;
+        }
+    
+        .view-button {
+          background: #C473FF;
+          color: #F8EDEB;
+          border: none;
+          font-weight: 700;
+          padding: 8px 16px;
+          cursor: pointer;
+          font-size: 16px;
+          border-radius: 4px;
+    
+          &:hover {
+            background: #8a38d3;
+          }
+        }
+      }  
+        .stock-item {
+          text-align: center;
+          
+          img {
+            width: 100%;
+            height: auto;
+            // border-radius: 10px;
+          }
+      
+          button {
+            width: 100%;
+            margin-top: 10px;
+          }
+        }
+    }
   }
   
